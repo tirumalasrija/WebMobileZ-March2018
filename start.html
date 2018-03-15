@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebMobilez</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link rel="stylesheet" href="./css/ionicons.min.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="./css/font-awesome.css"/>
+  </head>
+  <body>
+    <nav id="topNav" class="navbar navbar-default navbars navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html"> <img src="assets/webmobilez.png"></a>
+            </div>
+            <div class="navbar-collapse collapse" id="bs-navbar">
+               <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html">About</a>
+                    </li>
+                   <li>
+                        <a href="work.html">Work</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="contact-us.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="">224-703-3561</a>
+                    </li>
+                    <li>
+                        <a class="start" href="start.html">Start a Project</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="last" class="form">
+        <div class="container">
+            <div class="row">
+            <h1 class="margin-top-0 wow fadeIn color">Start a Project Planner</h1>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    
+                    <hr class="primary">
+                    <p class="lead">Here we are, ready to get started? Help us to understand what it is your looking for, we’ll review and get back to you as soon as possible. Sound good? Let’s go! Start a Project Now!</br>Rather talk now? Call us at 224-703-3561</p>
+                </div>
+                <div class="col-lg-12 text-center">
+
+                <form class="contact-form row" name="form_name" role="form" method="POST" id="form_name" action="<?= site_url('user/signIn'); ?>">
+
+
+                   <!--<form id="form_name" name="form_name" action="start.php" class="contact-form row">-->
+                    <h2 class="ora">TELL US A BIT ABOUT YOURSELF</h2>
+                        <div class="col-md-6">
+                            <label></label>
+                            <input type="text" id="fname" name="fname" class="form-control" placeholder="Name (first, last)">
+                        </div>
+                        <div class="col-md-6">
+                            <label></label>
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col-md-6">
+                            <label></label>
+                            <input type="text" class="form-control" placeholder="Phone">
+                        </div>
+                        <div class="col-md-6">
+                            <label></label>
+                            <input type="text" class="form-control" placeholder="Company Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label></label>
+                         <select class="form-control">
+                                        <option value="0" selected>Website Type</option>
+                                        <option value="1">New</option>
+                                        <option value="2">Existing</option>
+                                    </select>
+                                    </div>
+                            <div class="form-group col-md-6">
+                        <label></label>
+                         <select class="form-control">
+                                        <option value="0" selected>Web &amp; Mobile Services</option>
+                                        <option value="1">Website Design</option>
+                                        <option value="2">Website Development</option>
+                                        <option value="3">E-Commerce</option>
+                                        <option value="4">Digital Marketing</option>
+                                        <option value="5">Mobile Application</option>
+                                    </select>
+                                    </div>
+                      
+                        <h2 class="ora">How do you want your website to look like</h2>
+                        <div class="col-md-4">
+                            <label></label>
+                            <input type="text" class="form-control" placeholder="Reference Website Name">
+                        </div>
+                        <div class="col-md-4">
+                            <label></label>
+                            <input type="text" class="form-control" placeholder="Reference Website Name">
+                        </div>
+                         <div class="col-md-4">
+                            <label></label>
+                            <input type="text" class="form-control" placeholder="Reference Website Name">
+                        </div>
+                        <div class="clear-fix"></div>
+                         <h2 class="orai">NOW ON TO THE PROJECT DETAILS</h2>
+
+                        <div class="col-md-12">
+                            <label></label>
+                            <textarea class="form-control" rows="9" placeholder="PROJECT DESCRIPTION/DETAILS"></textarea>
+                        </div>
+                         <div class="form-group col-md-4 col-md-offset-4">
+                        <label class="ora">HOW DID YOU HEAR ABOUT US?</label>
+                         <select class="form-control">
+                                        <option value="0" selected>Select</option>
+                                        <option value="1">MI India</option>
+                                        <option value="2">Sulekha</option>
+                                        <option value="3">Phamplate</option>
+                                        <option value="4">Friends/Relatives</option>
+                                        <option value="5">Marketing Person</option>
+                                        <option value="6">Just Dail</option>
+                                        <option value="7">Other</option>
+                                    </select>
+                            </div>
+                        <div class="col-md-4 col-md-offset-4">
+                            <label></label>
+                            <button type="button" id="send" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg send">Send</button>
+                        </div>
+                   </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       
+        <div id="last" class="last">
+        <div class="container">
+            <div class="row">
+              
+                <div class="col-lg-3 col-sm-3 col-xs-3 text-center">
+                        <div class="feature">
+                        <a target="_blank" href="https://www.facebook.com/webmobilez/"><i class="fa fa-facebook-square fa-5x wow fadeIn" data-wow-delay=".3s" aria-hidden="true"></i></a>
+                        </div>
+                </div>
+                <div class="col-lg-3 col-sm-3 col-xs-3 text-center">
+                     <div class="feature">
+                      <a target="_blank" href="https://twitter.com/WebmobileZ"><i class="fa fa-twitter-square fa-5x wow fadeIn" data-wow-delay=".2s" aria-hidden="true"></i></a>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-sm-3 col-xs-3 text-center">
+                     <div class="feature">
+                        <a target="_blank" href="https://www.linkedin.com/company/webmobilez"><i class="fa fa-linkedin-square fa-5x wow fadeIn" data-wow-delay=".3s" aria-hidden="true"></i></a>
+                        </div>
+                </div>
+                
+                <div class="col-lg-3 col-sm-3 col-xs-3 text-center">
+                     <div class="feature">
+                        <a target="_blank" href="mailto:hello@webmobilez.com"><i class="fa fa-envelope fa-5x wow fadeIn" data-wow-delay=".3s" aria-hidden="true"></i></a>
+                        </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>USA: +1 224-703-3561</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>Hello@webmobilez.com</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>INDIA: +91 9642464660</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!--<div id="alertModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 class="text-center">Thank you!</h2>
+        		<p class="text-center">Thanks for your interest, we will be getting in touch shortly</p>
+        		<br/>
+        		<button id="send" class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">OK</button>
+        	</div>
+        </div>
+        </div>
+    </div>-->
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+      <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/custom.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/wow.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/parallax.js"></script>
+    <script src="./js/parallax.min.js"></script>
+    <script src=".js/backgroundVideo.js"></script>
+    
+  </body>
+</html>
