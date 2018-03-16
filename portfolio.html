@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to WebMobilez</title>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Welcome to WebMobilez</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/animate.min.css" />
@@ -11,9 +10,60 @@
     <link rel="stylesheet" href="./css/styles.css"/>
     <link rel="stylesheet" href="./css/font-awesome.min.css"/>
     <link rel="stylesheet" href="./css/font-awesome.css"/>
-  </head>
-  <body>
-    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+   <link rel="stylesheet" href="./css/responsiveslides.css">
+  <link rel="stylesheet" href="./css/themes.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="./js/responsiveslides.js"></script>
+  <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        auto: true,
+        pager: true,
+        nav: true,
+        speed: 500,
+        maxwidth: 800,
+        namespace: "centered-btns"
+      });
+
+      // Slideshow 2
+      $("#slider2").responsiveSlides({
+        auto: true,
+        pager: true,
+        nav: true,
+        speed: 500,
+        maxwidth: 800,
+        namespace: "transparent-btns"
+      });
+
+      // Slideshow 3
+      $("#slider3").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: true,
+        speed: 500,
+        maxwidth: 800,
+        namespace: "large-btns"
+      });
+
+    });
+  </script>
+<style>
+.navbar-default {
+border-color: rgba(35,35,35,.05);
+font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+background-color: #222;
+-webkit-transition: all .4s;
+-moz-transition: all .4s;
+transition: all .4s;
+}
+</style>
+</head>
+<body>
+  
+  <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
@@ -22,111 +72,46 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#first"> <img src="assets/webmobilez.png"></a>
+                <a class="navbar-brand page-scroll" href="index.html"> <img src="assets/webmobilez.png"></a>
             </div>
             <div class="navbar-collapse collapse" id="bs-navbar">
-               <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a class="page-scroll" href="index.html">Home</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="about.html">About</a>
                     </li>
-                   <li>
-                        <a lass="page-scroll" href="services.html">Services</a>
+                    <li>
+                        <a href="services.html">Services</a>
                     </li>
+                    
                      <li>
-                        <a lass="page-scroll" href="portfolio.html">Portfolio</a>
+                        <a href="portfolio.html">Portfolio</a>
                     </li>
+
                     <li>
                         <a class="page-scroll" href="contact-us.html">Contact Us</a>
                     </li>
-                    
-                </ul>
+                   
 
+                </ul>
             </div>
         </div>
     </nav>
-    <header id="first">
-        <div class="header-content">
-            <div class="inner">
-                <h1 class="cursive">Grow your business the smart way with digital World</h1>
-                <h4>We make it easy and affordable for your businesses</h4>
-                <hr>
-                <a href="about.html" class="btn btn-primary btn-xl page-scroll">About</a>
-                <a href="services.html" class="btn btn-primary btn-xl page-scroll">Services</a>
+    <div id="two" class="cols_wrapper lead-bg" style="padding-top:90px;">
 
-            </div>
-        </div>
-
-        <div id="overlay">
-    <video class="visible-desktop" id="hero-vid" poster="assets/web.png" autoplay loop="loop" muted>
-        <source type="video/webm" src="videos/web.webm" type="video/webm"></source>
-        <source type="video/mp4" src="videos/web.mp4"></source>
-    </video>
-       </div>
-    </header>
-<section id="two" class="cols_wrapper">
-        <div class="container">
+    <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="und-title margin-top-0"> Get started today and maximize your
-                    <span style="color:#e75c37;">Success Online</span>
-                    <span class="title-separators"><span></span></span></h2>
-                    <!--<p style="text-align: center; color: #333;">hai hello flexble layayout and then for the menu for the redesign for webmobile so so ha ha</p>-->
-                </div>
+                <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12  text-center">
+                     <h1 class="lead-main">Our Recent Work</h1>
+                   </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 text-center">
-                    <div class="feature">
-                        <img src="assets/responsive1.png">
-                        <h3>Web Design</h3>
-                        <p class="text-muted">We’ll build a beautiful website that captures your visitor’s attention and business.Your website will always adapt to their device giving them the perfect website experience.</p>
-                        <a href="web design.html" class="btn btn-dark btn-xl page-scroll">Learn More</a>
-                 </div>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <div class="feature">
-                        <img src="assets/ecommerce1.png">
-                        <h3>E-Commerce</h3>
-                        <p class="text-muted">With platform features like unlimited products and categories, to a secure one-page checkout, we make online shopping easy for customers and easy to manage for website owners.</p>
-                        <a href="ecommerce.html" class="btn btn-dark btn-xl page-scroll">Learn More</a>
+        </div><br/>
+    </div>
 
-                    </div>
-                </div>
-                <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 text-center">
-                    <div class="feature">
-                        <img src="assets/monitoring1.png">
-                        <h3>SEO & Digital Marketing</h3>
-                        <p class="text-muted">Establish, grow, and engage with your audience in meaningful ways with our unique social media system.Boost your online ranking with our amazing SEO tools.</p>
-                        <a href="marketing.html" class="btn btn-dark btn-xl page-scroll">Learn More</a>
-
-                    </div>
-                </div>
-
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-   <!-- <section id="three" class="three">
-            <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="und-title margin-top-0">Our Recent Work and
-                    <span style="color:#e75c37;">Portfolio</span>
-                    <span class="title-separators"><span></span></span></h2>
-                    <!--<p style="text-align: center; color: #333;">hai hello flexble layayout and then for the menu for the redesign for webmobile so so ha ha</p>--
-                </div>
-            </div>
-        </div>
+       <section id="three" class="three">
+           
         <div class="container">
             <div class="row">
 			      <div class="col-lg-4 col-md-4 text-center">
@@ -147,7 +132,7 @@
                         <p class="text-muted">Full service provider of information technology professional services and business solutions</p>
                     </div>
                 </div>
-
+				
                 <div class="col-lg-4 col-md-4 text-center">
                     <div class="feature site">
                          <div class="sites" style="background-image:url(assets/epiphyte.png);">
@@ -157,7 +142,7 @@
                         <p class="text-muted">World’s largest financial institutions for FX, commodity, private equity trades and others.</p>
                     </div>
                 </div>
-              <!--<div class="col-lg-4 col-md-4 text-center">
+              <div class="col-lg-4 col-md-4 text-center">
                     <div class="feature site">
                          <div class="sites" style="background-image:url(assets/vrfilms.png);">
                            <img src="assets/monitor.png">
@@ -166,7 +151,7 @@
                         <p class="text-muted">VR films is a film studio with promising goals for it’s self and for the film industry.</p>
                     </div>
                 </div>
-
+			
                <div class="col-lg-4 col-md-4 text-center">
                     <div class="feature site">
                          <div class="sites" style="background-image:url(assets/surya.png);">
@@ -176,7 +161,7 @@
                         <p class="text-muted">Movie theater fabrication all over Andhra Pradesh.</p>
                     </div>
                 </div>
-                <!--<div class="col-lg-4 col-md-4 text-center">
+                <div class="col-lg-4 col-md-4 text-center">
                     <div class="feature site">
                         <div class="sites" style="background-image:url(assets/red.png);">
                               <a href="redshore.html"><img src="assets/monitor.png"></a>
@@ -211,72 +196,95 @@
                         <h3>CFAME</h3>
                         <p class="text-muted">To carry on the business of developing, promoting, marketing, organizing and managing artists and celebrity management national as well</p>
                     </div>
-
-                </div>--
-				<div class="col-md-4 col-md-offset-4">
-                            <label></label>
-                            <a href="work.html" type="button" id="send" class="btn btn-primary btn-block btn-lg send">View More</a>
+                </div>
+				 <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature site">
+                        <div class="sites" style="background-image:url(assets/kalgold.png);">
+                             <img src="assets/monitor.png">
                         </div>
-
+                        <h3>KalGold Technology</h3>
+                        <p class="text-muted">Block Chain Services-Accept cryptocurrencies and instantly convert them to your preferred currency or keep them in your wallet.</p>
+                    </div>
+                </div>
+				<div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature site">
+                        <div class="sites" style="background-image:url(assets/drive.png);">
+                             <a href="uds_driving.html"><img src="assets/monitor.png"></a>
+                        </div>
+                        <h3>UDS Driving School</h3>
+                        <p class="text-muted">United Driving School provide a fully licensed driving school as well as a fully functional testing center.</p>
+                    </div>
+                </div>
+				<div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature site">
+                        <div class="sites" style="background-image:url(assets/data.png);">
+                            <img src="assets/monitor.png">
+                        </div>
+                        <h3>Intellidata-IT</h3>
+                        <p class="text-muted">IT based business process solutions, next-gen mobility solutions and product engineering services, specializing in the Healthcare etc..</p>
+                    </div>
+                </div>
+				<div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature site">
+                        <div class="sites" style="background-image:url(assets/moos.png);">
+                             <a href="moos_angels.html"><img src="assets/monitor.png"></a>
+                        </div>
+                        <h3>Moosangels</h3>
+                        <p class="text-muted">IT based business process solutions, next-gen mobility solutions and product engineering services, specializing in the Healthcare etc..</p>
+                    </div>
+                </div>
+				<div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature site">
+                        <div class="sites" style="background-image:url(assets/mbb_home.png);">
+                             <a href="mbhome_care.html"><img src="assets/monitor.png"></a>
+                        </div>
+                        <h3>MBHomeCre</h3>
+                        <p class="text-muted">IT based business process solutions, next-gen mobility solutions and product engineering services, specializing in the Healthcare etc..</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>-->
-
-   <!-- <div class="parallax2">
-        <div class="container">
-            <div class="row">
-            <div class="col-lg-6">
-                        </div>
-            <div class="col-lg-6">
-            <h1></h1>
-            </div>
-
-            </div>
-        </div>
-    </div>-->
-
-    <div class="getstarted">
+    </section>
+    
+		  <div class="getstarted">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <h4>Your business is important</h4>
                     <h3>Let's build something effective together</h3>
                     <div class="button">
-                        <a href="#">GET STARTED HERE</a>
+                        <a href="start.html">GET STARTED HERE</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-
-        <div id="last" class="last">
+     </div>
+      <div id="last" class="last">
         <div class="container">
             <div class="row">
-
+              
                 <div class="col-lg-3 col-sm-3 col-xs-3 text-center">
                         <div class="feature">
-                        <a target="_blank" href="https://www.facebook.com/webmobilez/"><i class="fa fa-facebook-square fa-4x wow fadeIn" data-wow-delay=".3s" aria-hidden="true"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/webmobilez/"><i class="fa fa-facebook-square fa-5x wow fadeIn" data-wow-delay=".3s" aria-hidden="true"></i></a>
                         </div>
                 </div>
                 <div class="col-lg-3 col-sm-3 col-xs-3 text-center">
                      <div class="feature">
-                      <a target="_blank" href="https://twitter.com/WebmobileZ"><i class="fa fa-twitter-square fa-4x wow fadeIn" data-wow-delay=".2s" aria-hidden="true"></i></a>
+                      <a target="_blank" href="https://twitter.com/WebmobileZ"><i class="fa fa-twitter-square fa-5x wow fadeIn" data-wow-delay=".2s" aria-hidden="true"></i></a>
                       </div>
                 </div>
                 <div class="col-lg-3 col-sm-3 col-xs-3 text-center">
                      <div class="feature">
-                        <a target="_blank" href="https://www.linkedin.com/company/webmobilez"><i class="fa fa-linkedin-square fa-4x wow fadeIn" data-wow-delay=".3s" aria-hidden="true"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/webmobilez"><i class="fa fa-linkedin-square fa-5x wow fadeIn" data-wow-delay=".3s" aria-hidden="true"></i></a>
                         </div>
                 </div>
-
+                
                 <div class="col-lg-3 col-sm-3 col-xs-3 text-center">
                      <div class="feature">
-                        <a target="_blank" href="mailto:hello@webmobilez.com"><i class="fa fa-envelope fa-4x wow fadeIn" data-wow-delay=".3s" aria-hidden="true"></i></a>
+                        <a target="_blank" href="mailto:hello@webmobilez.com"><i class="fa fa-envelope fa-5x wow fadeIn" data-wow-delay=".3s" aria-hidden="true"></i></a>
                         </div>
                 </div>
-
+               
             </div>
         </div>
     </div>
@@ -298,7 +306,6 @@
     </footer>
     
 
-   
     <div id="alertModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-sm">
         <div class="modal-content">
@@ -311,17 +318,15 @@
         </div>
         </div>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
-    <script src="./js/custom.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/jquery.easing.min.js"></script>
-    <script src="./js/wow.js"></script>
-    <script src="./js/scripts.js"></script>
-    <script src="./js/parallax.js"></script>
-    <script src="./js/parallax.min.js"></script>
-    <script src="./js/backgroundVideo.js"></script>
-  </body>
+	
+	
+<script src="./js/jquery.validate.min.js"></script>
+<script src="./js/custom.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/jquery.easing.min.js"></script>
+<script src="./js/wow.js"></script>
+<script src="./js/parallax.js"></script>
+<script src="./js/parallax.min.js"></script>
+<script src="/js/backgroundVideo.js"></script>
+</body>
 </html>
