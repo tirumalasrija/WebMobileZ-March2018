@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>Welcome to WebMobilez</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/bootstrap.min.css" />
+   <link rel="stylesheet" href="./css/animate.min.css" />
+   <link rel="stylesheet" href="./css/ionicons.min.css"/>
+   <link rel="stylesheet" href="./css/styles.css"/>
+   <link rel="stylesheet" href="./css/font-awesome.min.css"/>
+   <link rel="stylesheet" href="./css/font-awesome.css"/>
+  <link rel="stylesheet" href="./css/responsiveslides.css">
+ <link rel="stylesheet" href="./css/themes.css">
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+ <script src="./js/responsiveslides.js"></script>
+ <script>
+   // You can also use "$(window).load(function() {"
+   $(function () {
+
+     // Slideshow 1
+     $("#slider1").responsiveSlides({
+       auto: true,
+       pager: true,
+       nav: true,
+       speed: 500,
+       maxwidth: 800,
+       namespace: "centered-btns"
+     });
+
+     // Slideshow 2
+     $("#slider2").responsiveSlides({
+       auto: true,
+       pager: true,
+       nav: true,
+       speed: 500,
+       maxwidth: 800,
+       namespace: "transparent-btns"
+     });
+
+     // Slideshow 3
+     $("#slider3").responsiveSlides({
+       auto: true,
+       pager: false,
+       nav: true,
+       speed: 500,
+       maxwidth: 800,
+       namespace: "large-btns"
+     });
+
+   });
+ </script>
+<style>
+.navbar-default {
+border-color: rgba(35,35,35,.05);
+font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+background-color: #222;
+-webkit-transition: all .4s;
+-moz-transition: all .4s;
+transition: all .4s;
+}
+.dark-overlay{
+  background-color: $dark-overlay;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+
+}
+
+</style>
+</head>
+<body>
+
+   <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+       <div class="container">
+           <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                   <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand page-scroll" href="index.html"> <img src="assets/webmobilez.png"></a>
+           </div>
+           <div class="navbar-collapse collapse" id="bs-navbar">
+               <ul class="nav navbar-nav navbar-right">
+                   <li>
+                       <a class="page-scroll" href="index.html">Home</a>
+                   </li>
+                   <li>
+                       <a class="page-scroll" href="about.html">About</a>
+                   </li>
+                  <li>
+                       <a href="services.html">Services</a>
+                   </li>
+                   <li>
+                       <a href="portfolio.html">Portfolio</a>
+                   </li>
+                   <li>
+                       <a class="page-scroll" href="contact-us.html">Contact us</a>
+                   </li>
+
+               </ul>
+           </div>
+       </div>
+   </nav>
+      <section id="explore-section" class="bg-light text-muted py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <h2 class="mb-5"><b>Websites That Work</b></h2> <br>
+                <p>Turning website visitors into customers is our number
+                 one goal when creating a new website and it should be yours too.</p>
+                    <br>
+                 <p>Our team, technology and process has been built specifically for businesses
+                   that want results fast and affordably. We’ve taken out all of the
+                  “unnecessary steps” and doubled-down on what matters most to you.</p>
+                      <br>
+                    <p>Our customers love working with us because we take care of everything in the
+                      web design process from planning to design, copywriting and more.
+                      Our web design process is hassle free and results driven.</p>
+              </div>
+              <div class="col-lg-6 m-5">
+                <div class="container">
+                    <div class="row">
+        			      <div class="col-lg-4 col-md-4 text-center">
+                            <div class="feature site">
+                                 <div class="sites" style="background-image:url(assets/avs.png);">
+                                     <a href="avs.html"><img src="assets/monitor.png"></a>
+                                </div>
+                                <h3><b>AVS Consultants</b></h3>
+                                <p class="text-muted text-center">IT Managed Services, Digital Marketing & Commerce,
+                                  Talent Acquisition and IT Seminars.</p>
+                        </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="gallery" class="py-5">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-3 mb-6">
+              <img src="assets/google-partner-badge-1.png">
+            </div>
+            <div class="col-md-3">
+              <img src="assets/top-local-1.png">
+            </div>
+            <div class="col-md-3">
+              <img src="assets/bing-1.png">
+            </div>
+            <div class="col-md-3 m-5">
+              <img src="assets/gyob-blue-1.png">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <footer id="main-footer" class="bg-dark pt-5 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Web Mobilez</h4>
+              <a href="index.html" class="text-white bg-dark">Home</a><br>
+              <a href="about.html" class="text-white bg-dark">About</a><br>
+              <a href="services.html" class="text-white bg-dark">Services</a><br>
+              <a href="portfolio.html" class="text-white bg-dark">Portfolio</a><br>
+              <a href="contact-us.html" class="text-white bg-dark">Contact Us</a><br>
+      </div>
+             <div class="col-md-4 p-5">
+              <h4>PRODUCTS/SERVICES</h4>
+              <a href="webdesign.html" class="text-white bg-dark">Web Design</a><br>
+              <a href="search.html" class="text-white bg-dark">Search Engine Optimization</a><br>
+              <a href="advertising.html" class="text-white bg-dark">Search Advertising</a><br>
+              <a href="support.html" class="text-white bg-dark">Support</a><br>
+
+
+
+
+            </div>
+             <div class="col-md-4">
+              <h4>CONTACT US</h4>
+              <a href="#" class="text-white bg-dark"><i class="fa fa-map-marker fa-x"> USA: 32985 Hamilton Ct <br>
+                                   Farmington hills, MI 48334</i></a><br><br>
+              <a href="#" class="text-white bg-dark"><i class="fa fa-map-marker fa-x"> INDIA: Prime Hospital Lane,Ameerpet,
+                         Hyderabad 500016</i></a>
+
+            </div>
+
+
+          </div>
+        </div>
+      </footer>
+
+
+
+      <div id="alertModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h2 class="text-center">Thank you!</h2>
+              <p class="text-center">Thanks for your interest, we will be getting in touch shortly</p>
+              <br/>
+              <button id="send" class="bt btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">OK</button>
+            </div>
+          </div>
+          </div>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="./js/jquery.min.js"></script>
+      <script src="./js/jquery.validate.min.js"></script>
+      <script src="./js/custom.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="./js/jquery.easing.min.js"></script>
+      <script src="./js/wow.js"></script>
+      <script src="./js/scripts.js"></script>
+      <script src="./js/parallax.js"></script>
+      <script src="./js/parallax.min.js"></script>
+      <script src="./js/backgroundVideo.js"></script>
+    </body>
+    </html>
