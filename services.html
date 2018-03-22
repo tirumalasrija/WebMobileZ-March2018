@@ -60,35 +60,59 @@ background-color: #222;
 transition: all .4s;
 }
 #home-icons{
+  background-color: #d94c27;
+  color: #fff;
+  min-height: 80px;
 
+  }
 
+#tabs h5{
+  font-weight: 600;
+  color:  #d94c27;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-right: 10px;
+  p{
+    margin: 0 0 1.625em;
+  }
 }
-h5{
-      margin-top: 10px;
-    font-weight: 600;
-    color: #eb4923;
-    font-size: 22px;
-}
-p{
-  margin: 0 0 1.625em;
-}
- .btn-primary, .button-primary {
-    background-color: #039be5;
-}
-
-.footer-widgets .widgettitle {
-    opacity: 1;
-    text-transform: uppercase;
-    letter-spacing: 0;
-    font-weight: 600;
-    font-size: 16px;
-    margin-bottom: 30px;
+  .btn{
+    border-radius: 2px;
+    box-shadow: none;
+    border: 0;
     color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.612;
+    display: inline-block;
+    outline: 0;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    width: auto;
+    white-space: nowrap;
+  }
+
+#social{
+  min-height: 200px;
+min-width: 100px;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 60px;
 }
-.li{
-  margin-bottom: 6px;
-      list-style-type: none;
+
+#main-footer{
+  min-width: 50px;
+  min-height: 80px
+  padding-left: 6px;
+
+  h4{
+    padding-right: 20px;
+  }
 }
+
+
 </style>
 </head>
 <body>
@@ -128,45 +152,79 @@ p{
     </nav>
 
 
-           <section id="home-icons" class="py-5">
+           <section id="home-icons">
             <div class="container">
             <div class="row">
-              <h1 class="text-center">Reach more customers and drive more leads than ever before</h1>
-              <p class="lead">That’s our mission and it’s what we want to do for you.
+              <div class="col mb-5">
+              <h1 class="text-center"><b>Reach more customers and drive more leads than ever before</b></h1><br>
+              <p class="text-center">That’s our mission and it’s what we want to do for you. <br>
                 Join hundreds of companies who trust Momentum with their digital marketing needs.</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <div class="col-md-3">
-                <img src="assets/web-design-01.png" height="100px">
-                <h5>Website Design</h5>
+
+          <section id="tabs" class="py-5 ml-5">
+          <div class="container">
+          <div class="row">
+           <div class="col-lg-4">
+                <img src="assets/web-design-01.png" height="140px">
+                <h5><b>Website Design</b></h5>
                 <p>Create the web presence your business deserves with custom designed mobile responsive website that converts your visitors into new customers.</p>
-                <a href="#" class="btn btn-success btn-lg page-scroll">Learn More</a>
+                <a href="webdesign.html" class="btn btn-success btn-lg page-scroll">Learn More</a>
 
             </div>
-            <div class="col-md-3">
-                <img src="assets/seo-icon.png" height="100px">
-                <h5>Search Engine Optimization</h5>
+            <div class="col-lg-4">
+                <img src="assets/seo-icon.png" height="140px">
+                <h5><b>Search Engine Optimization</b></h5>
                 <p>Get your website found in the search engines and generate more qualified traffic to your website with our search engine optimization (SEO) service.</p>
-                <a href="#" class="btn btn-success btn-lg page-scroll">Learn More</a>
+                <a href="search.html" class="btn btn-success btn-lg page-scroll">Learn More</a>
 
             </div>
-            <div class="col-md-3">
-                <img src="assets/time-and-expertise.gif" height="100px">
-                <h5>Search Advertising</h5>
+            <div class="col-lg-4">
+                <img src="assets/time-and-expertise.gif" height="140px">
+                <h5><b>Search Advertising</b></h5>
                 <p>Get found on Google and other search engines instantly and start generating qualified leads for your business with our managed search advertising service.</p>
-                <a href="#" class="btn btn-success btn-lg page-scroll">Learn More</a>
-
-            </div>
-            <div class="col-md-3">
-                <img src="assets/ratings-review-01.png" height="100px">
-                <h5>Ratings and Reviews</h5>
-                <p>Generate new online reviews for your business, and help correct customer concerns before their issues become negative posts with our reviews and ratings service.</p>
-                <a href="#" class="btn btn-success btn-lg page-scroll">Learn More</a>
+                <a href="advertising.html" class="btn btn-success btn-lg page-scroll">Learn More</a>
 
             </div>
             </div>
             </div>
 
  </section>
+
+       <section id="social" class="py-5 bg-primary">
+        <div class="container">
+          <div class="row">
+
+              <div class="col-lg-3 col-sm-3 col-xs-3 text-center">
+                      <div class="feature">
+                      <a target="_blank" href="https://www.facebook.com/webmobilez/"><i class="fa fa-facebook-square fa-5x wow fadeIn" data-wow-delay=".3s" aria-hidden="true"></i></a>
+                      </div>
+              </div>
+              <div class="col-lg-3 col-sm-3 col-xs-3 text-center">
+                   <div class="feature">
+                    <a target="_blank" href="https://twitter.com/WebmobileZ"><i class="fa fa-twitter-square fa-5x wow fadeIn" data-wow-delay=".2s" aria-hidden="true"></i></a>
+                    </div>
+              </div>
+              <div class="col-lg-3 col-sm-3 col-xs-3 text-center">
+                   <div class="feature">
+                      <a target="_blank" href="https://www.linkedin.com/company/webmobilez"><i class="fa fa-linkedin-square fa-5x wow fadeIn" data-wow-delay=".3s" aria-hidden="true"></i></a>
+                      </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-3 col-xs-3 text-center">
+                   <div class="feature">
+                      <a target="_blank" href="mailto:hello@webmobilez.com"><i class="fa fa-envelope fa-5x wow fadeIn" data-wow-delay=".3s" aria-hidden="true"></i></a>
+                      </div>
+              </div>
+
+          </div>
+      </div>
+    </section>
+
+
 
 
 <!-- FOOTER -->
@@ -183,7 +241,7 @@ p{
         <a href="contact-us.html" class="text-white bg-dark">Contact Us</a><br>
 </div>
        <div class="col-md-4">
-        <h3>PRODUCTS/SERVICES</h3>
+        <h3>Products/Services</h3>
         <a href="webdesign.html" class="text-white bg-dark">Web Design</a><br>
         <a href="search.html" class="text-white bg-dark">Search Engine Optimization</a><br>
         <a href="advertising.html" class="text-white bg-dark">Search Advertising</a><br>
@@ -193,11 +251,9 @@ p{
 
       </div>
        <div class="col-md-4">
-        <h3>CONTACT US</h3>
+        <h3>Contact Us</h3>
         <a href="#" class="text-white bg-dark"><i class="fa fa-map-marker fa-x"> USA: 32985 Hamilton Ct <br>
                              Farmington hills, MI 48334</i></a><br><br>
-          <a href="#" class="text-white bg-dark"><i class="fa fa-map-marker fa-x"> INDIA: Prime Hospital Lane,Ameerpet,
-                   Hyderabad 500016</i></a>
 
       </div>
 
