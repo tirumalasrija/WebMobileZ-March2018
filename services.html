@@ -5,15 +5,10 @@
   <title>Welcome to WebMobilez</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/animate.min.css" />
-    <link rel="stylesheet" href="./css/ionicons.min.css"/>
     <link rel="stylesheet" href="./css/styles.css"/>
     <link rel="stylesheet" href="./css/font-awesome.min.css"/>
     <link rel="stylesheet" href="./css/font-awesome.css"/>
-   <link rel="stylesheet" href="./css/responsiveslides.css">
-  <link rel="stylesheet" href="./css/themes.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="./js/responsiveslides.js"></script>
+
   <script>
     // You can also use "$(window).load(function() {"
     $(function () {
@@ -95,7 +90,7 @@ transition: all .4s;
   }
 
 #social{
-  min-height: 200px;
+  min-height: 80px;
 min-width: 100px;
   padding-top: 5px;
   padding-left: 20px;
@@ -103,12 +98,12 @@ min-width: 100px;
 }
 
 #main-footer{
-  min-width: 50px;
-  min-height: 80px
-  padding-left: 6px;
+  min-width: 100px;
+  min-height: 100px
 
   h4{
     padding-right: 20px;
+    font-size: 40px;
   }
 }
 
@@ -134,9 +129,9 @@ min-width: 100px;
                         <a class="page-scroll" href="index.html">Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="about.html">About</a>
+                        <a class="page-scroll" href="about.html">About Us</a>
                     </li>
-                   <li>
+                   <li class="active">
                         <a href="services.html">Services</a>
                     </li>
                     <li>
@@ -167,7 +162,7 @@ min-width: 100px;
 
           <section id="tabs" class="py-5 ml-5">
           <div class="container">
-          <div class="row">
+          <div class="row text-center">
            <div class="col-lg-4">
                 <img src="assets/web-design-01.png" height="140px">
                 <h5><b>Website Design</b></h5>
@@ -193,6 +188,20 @@ min-width: 100px;
             </div>
 
  </section>
+ <div class="getstarted">
+     <div class="container">
+         <div class="row">
+             <div class="col-sm-12">
+                 <h4>Your business is important</h4>
+                 <h3>Let's build something effective together</h3>
+                 <div class="button">
+                     <a href="start.html">GET STARTED HERE</a>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+
 
        <section id="social" class="py-5 bg-primary">
         <div class="container">
@@ -228,12 +237,11 @@ min-width: 100px;
 
 
 <!-- FOOTER -->
-
-<footer id="main-footer" class="bg-dark pt-5 mt-5">
+<footer id="main-footer" class="bg-dark">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <h3>Web Mobilez</h3>
+        <h4>Web Mobilez</h4>
         <a href="index.html" class="text-white bg-dark py-5">Home</a><br>
         <a href="about.html" class="text-white bg-dark">About</a><br>
         <a href="services.html" class="text-white bg-dark">Services</a><br>
@@ -241,7 +249,7 @@ min-width: 100px;
         <a href="contact-us.html" class="text-white bg-dark">Contact Us</a><br>
 </div>
        <div class="col-md-4">
-        <h3>Products/Services</h3>
+        <h4>Services</h4>
         <a href="webdesign.html" class="text-white bg-dark">Web Design</a><br>
         <a href="search.html" class="text-white bg-dark">Search Engine Optimization</a><br>
         <a href="advertising.html" class="text-white bg-dark">Search Advertising</a><br>
@@ -251,13 +259,26 @@ min-width: 100px;
 
       </div>
        <div class="col-md-4">
-        <h3>Contact Us</h3>
-        <a href="#" class="text-white bg-dark"><i class="fa fa-map-marker fa-x"> USA: 32985 Hamilton Ct <br>
-                             Farmington hills, MI 48334</i></a><br><br>
+        <h4>Contact Us</h4>
+        <a href="#" class="text-white bg-dark"><i class="fa fa-map-marker fa-x"></i> USA: 32985 Hamilton Ct <br>
+                             Farmington hills, MI 48334</a><br><br>
 
+<ul class="list-inline">
+         <li><a href="https://www.facebook.com/seekmomentum" target="_blank"><i class="fa fa-facebook-square fa-2x text-muted"></i></a></li>
+         <li><i class="fa fa-twitter-square fa-2x text-muted"></i></li>
+         <li><i class="fa fa-google-plus-square fa-2x text-muted"></i></li>
+         <li><i class="fa fa-instagram fa-2x text-muted"></i></li>
+         <li><i class="fa fa-linkedin-in fa-2x text-muted"></i></li>
+         <li><i class="fa fa-rss fa-2x text-muted"></i></li>
+         <li><i class="fa fa-vimeo-square fa-2x text-muted"></i></li>
+</ul>
       </div>
 
 
     </div>
   </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

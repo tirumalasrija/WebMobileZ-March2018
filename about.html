@@ -6,12 +6,11 @@
     <title>Welcome to WebMobilez</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/animate.min.css" />
-    <link rel="stylesheet" href="./css/ionicons.min.css"/>
     <link rel="stylesheet" href="./css/styles.css"/>
     <link rel="stylesheet" href="./css/font-awesome.min.css"/>
     <link rel="stylesheet" href="./css/font-awesome.css"/>
-    <script>
+
+        <script>
     // You can also use "$(window).load(function() {"
     $(function () {
 
@@ -104,19 +103,20 @@ img{
   margin-right: 10px;
   a{
     color: #d94c27;
-
-  }
-#icon-boxes h3{
-  font-weight: 600;
-  color:  #d94c27;
-  font-size: 22px;
-  margin-top: 10px;
-  margin-right: 10px;
-p{
-  margin: 0 0 1.625em;
-
 }
 }
+
+
+  #icon-boxes h3{
+      font-weight: 600;
+      color:  #d94c27;
+      font-size: 22px;
+      margin-top: 10px;
+      margin-right: 10px;
+      p{
+        margin: 0 0 1.625em;
+      }
+    }
 #about p{
   font-weight: 400;
 }
@@ -141,8 +141,8 @@ p{
                     <li>
                         <a class="page-scroll" href="index.html">Home</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="about.html">About</a>
+                    <li class="active">
+                        <a class="page-scroll" href="about.html">About Us</a>
                     </li>
                    <li>
                         <a href="services.html">Services</a>
@@ -171,14 +171,14 @@ p{
            </div>
          </section>
 
-        <section id="icon-boxes" class="p-5">
+        <section id="icon-boxes" class="py-5">
           <div class="container">
             <div class="row mb-4">
               <div class="col-md-4">
                 <div class="card bg-primary text-center text-white">
                  <div class="card-body">
                   <img src="assets/100-percent-small-business.gif" alt="100-percent-small-business" height="140" width="140">
-                  <h3><b>Business Growth</b></h3>
+                  <h3><b>Planning</b></h3>
                   <p>Our mission is to maximize growth of our clients. We love solving problems.
                     Let us get you to full potential.</p>
                 </div>
@@ -188,7 +188,7 @@ p{
                 <div class="card bg-primary text-center text-white">
                 <div class="card-body">
                 <img src="assets/we-deliver-results.gif" alt="we-deliver-results" height="140" width="140">
-                <h3><b>We Deliver Results</b></h3>
+                <h3><b>Design</b></h3>
                 <p>We’re dedicated to making a real difference in your business by generating consistent,
                    quality leads and growing your sale</p>
               </div>
@@ -198,7 +198,7 @@ p{
               <div class="card bg-primary text-center text-white">
               <div class="card-body">
               <img src="assets/unlimited-support.gif" alt="unlimited-support" height="140" width="140">
-              <h3><b>Unlimited Support</b></h3>
+              <h3><b>Development</b></h3>
               <p>To us, our clients always comes first. Our industry-leading <b>SmartSupport™</b>
                 allows us to be there for you whenever you need us.</p>
             </div>
@@ -211,7 +211,7 @@ p{
               <div class="card bg-primary text-center text-white">
                <div class="card-body">
                 <img src="assets/founded-in-2010.gif" alt="founded-in-2010" height="140" width="140">
-               <h3><b>Founded in 2010</b></h3>
+               <h3><b>Testing</b></h3>
                 <p>We’re a Midwest, blue collar company that loves helping businesses grow. In six years,
                    we’ve already helped hundreds of companies succeed.</p>
               </div>
@@ -221,7 +221,7 @@ p{
               <div class="card bg-primary text-center text-white">
               <div class="card-body">
               <img src="assets/world-class-partners.gif" alt="world-class-partners" height="140" width="140">
-              <h3><b>World Class Partners</b></h3>
+              <h3><b>Launch</b></h3>
               <p>You’re in good hands. We've partnered up with top companies like Google, Microsoft,
                  Amazon and Facebook to deliver you high-quality results.</p>
             </div>
@@ -231,7 +231,7 @@ p{
             <div class="card bg-primary text-center text-white">
             <div class="card-body">
             <img src="assets/in-the-media.gif" alt="Social Advertising" height="140" width="140">
-            <h3><b>In the Media</b></h3>
+            <h3><b>Support</b></h3>
             <p>It’s important to give back to your community.
               We’ve been honored by our local media for our charity events,
               donations and sponsorship activities..</p>
@@ -277,8 +277,9 @@ p{
        <section id="story" class="py-5">
          <div class="container">
            <div class="row">
+             <h1><b>Our Story</b></h1><br>
              <div class="col-md-6">
-               <h1><b>Our Story</b></h1><br>
+
                <p>WebMobilez was founded in 2010 near Detroit. Our first client, Michigan Head & Neck, remains a client today.
                  Since then, we have added over hundreds of new clients who recognize our passion, as well as our integrity and results-focus.</p>
                  <p>We have the solutions and expertise to maximize sales
@@ -288,7 +289,7 @@ p{
                    <p>Have you worked with us before? Please take a moment to <br><a href="#"><b>review your experience</b></a> with us.</p>
              </div>
              <div class="col-md-6 p-5">
-               <img src="assets/wbs.png" alt="">
+               <img src="assets/wbs.png" class="img-responsive" alt="">
              </div>
            </div>
          </div>
@@ -417,7 +418,7 @@ p{
         </div>
     </div>-->
 
-  <!--  <div class="getstarted">
+   <div class="getstarted">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -429,7 +430,7 @@ p{
                 </div>
             </div>
         </div>
-    </div>-->
+    </div>
 
 
    <div id="social" class="last">
@@ -487,8 +488,18 @@ p{
           </div>
            <div class="col-md-4">
             <h4>CONTACT US</h4><br>
-            <a href="#" class="text-white bg-dark"><i class="fa fa-map-marker fa-x"> USA: 32985 Hamilton Ct <br>
-                                 Farmington hills, MI 48334</i></a><br><br>
+            <a href="#" class="text-white bg-dark"><i class="fa fa-map-marker fa-x"> </i>USA: 32985 Hamilton Ct <br>
+             Farmington hills, MI 48334</a><br><br>
+
+             <ul class="list-inline">
+                      <li><a href="https://www.facebook.com/seekmomentum" target="_blank"><i class="fa fa-facebook-square fa-2x text-muted"></i></a></li>
+                      <li><i class="fa fa-twitter-square fa-2x text-muted"></i></li>
+                      <li><i class="fa fa-google-plus-square fa-2x text-muted"></i></li>
+                      <li><i class="fa fa-instagram fa-2x text-muted"></i></li>
+                      <li><i class="fa fa-linkedin-in fa-2x text-muted"></i></li>
+                      <li><i class="fa fa-rss fa-2x text-muted"></i></li>
+                      <li><i class="fa fa-vimeo-square fa-2x text-muted"></i></li>
+             </ul>
 
           </div>
 
@@ -511,17 +522,9 @@ p{
         </div>
         </div>
     </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
-    <script src="./js/custom.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/jquery.easing.min.js"></script>
-    <script src="./js/wow.js"></script>
-    <script src="./js/scripts.js"></script>
-    <script src="./js/parallax.js"></script>
-    <script src="./js/parallax.min.js"></script>
-    <script src="./js/backgroundVideo.js"></script>
+
+
   </body>
 </html>

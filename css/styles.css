@@ -99,6 +99,7 @@ aside {
 
 footer {
     padding: 15px;
+
 }
 
 /*.no-padding {
@@ -262,11 +263,11 @@ header .header-content .inner p {
 
 #video-background {
   position: absolute;
-  right: 0; 
+  right: 0;
   bottom: 0;
-  min-width: 100%; 
+  min-width: 100%;
   min-height: 100%;
-  width: auto; 
+  width: auto;
   height: auto;
   z-index: 1;
   opacity: 0.4;
@@ -284,7 +285,7 @@ footer {
     .icon-lg {
         font-size: 80px;
     }
-    
+
     header {
         min-height: 100%;
     }
@@ -314,7 +315,7 @@ footer {
         max-width: 80%;
         font-size: 18px;
     }
-    
+
     section {
         min-height: 600px;
         padding: 100px 0;
@@ -562,14 +563,14 @@ width:100%;
 float: left;
 }
 .service-content{
-    
+
     margin-left: 95px;
     padding-top: 10px;
 }
 .cols_wrapper{
     box-sizing: border-box;
-    padding-left: 15px;
-    padding-right: 15px;
+    /* padding-left: 15px; */
+    /* padding-right: 15px; */
     width: 100%;
     position: relative;
     z-index: 1;
@@ -718,7 +719,7 @@ padding: 100px 0;
 .parallax-mirror,#vurtUnderlay{
     height:auto!important;
     width:100%!important;
-    padding:45% 0 0;    
+    padding:45% 0 0;
 }
 .parallax-mirror img{width:100%!important;height:100%!important}
 /* Content Styles */
@@ -778,7 +779,7 @@ margin-bottom:1.3em;
     background-image: url('../assets/program.png');
 
     /* Full height */
-    height: 50%; 
+    height: 50%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -791,7 +792,7 @@ margin-bottom:1.3em;
     background-image: url('../assets/back.png');
 
     /* Full height */
-    height: 50%; 
+    height: 50%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -973,7 +974,7 @@ background-color: rgb(231, 92, 55)
 
 .content-left{
 	background-color:#000;
-	
+
 }
 .content-left h3{
 	color:#fff;
@@ -1009,12 +1010,12 @@ background-color: rgb(231, 92, 55)
     display: inline-block;
     color: red;
     vertical-align: middle;
-	
+
 }
 .feature2 h3{
 	color:#000;
 	font-weight:bold;
-}	
+}
 .content{
 	background-color:#ccc;
 }
@@ -1105,12 +1106,49 @@ background-color: rgb(231, 92, 55)
 .lead-bg{
 	 background-image:url(../assets/background-row2.jpg) !important;
 	 background-size:cover;
-	 background-repeat:no-repeat;	 
+	 background-repeat:no-repeat;
 }
 .gap{
-	
+
 }
 .fa:hover{
 	color:#d94c27;
 }
 
+#main-footer h3{
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#main-footer a{
+  line-height: 40px;
+}
+ul li{
+  list-style-type: none;
+}
+
+.carousel-control .fa{
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    color: #555;
+}
+
+#myCarousel .carousel-control.left{
+  background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+
+    background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+.carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+
+    background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+}
