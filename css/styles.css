@@ -363,9 +363,6 @@ textarea {
     }
 }
 
-.feature p {
-    margin-bottom: 0;
-}
 
 .call-to-action h2 {
     margin: 0 auto 20px;
@@ -892,7 +889,8 @@ background-color: #d94c27;
     text-align: center;
 }
 .btn{
-background-color: rgb(231, 92, 55)
+background-color: rgb(231, 92, 55);
+color: #fff;
 }
 
 /***************************************************************/
@@ -1171,3 +1169,11 @@ ul li{
   margin-right: 10px;
 
 }
+  .navbar-default {
+    border-color: rgba(35,35,35,.05);
+    font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+    }
