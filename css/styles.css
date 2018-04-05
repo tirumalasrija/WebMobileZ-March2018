@@ -1121,12 +1121,26 @@ color: #fff;
 #main-footer h3{
   font-weight: 300;
   margin-bottom: 20px;
+  list-style-type: none;
 }
 #main-footer a{
   line-height: 40px;
+  margin-left: 10px;
+  padding-right: 150px;
+  float: left;
 }
-ul li{
-  list-style-type: none;
+
+#main-footer  li{
+  position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 32px;
+    background: none;
+    color: #FC5A1B;
+    padding: 10px 10px;
+    line-height: 22px;
+    font-size: 16px;
+    margin: 0px 0px;
 }
 
 .carousel-control .fa{
