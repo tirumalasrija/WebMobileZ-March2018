@@ -1198,3 +1198,22 @@ margin-top: 80px;
     -moz-transition: all .4s;
     transition: all .4s;
     }
+
+
+.banner-img {
+    width: 100%;
+    position: absolute;
+}
+@media screen and (max-width: 980px)
+.page-banner {
+    height: 300px;
+}
+.page-banner {
+    position: relative;
+    padding: 0px 0px;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+}
